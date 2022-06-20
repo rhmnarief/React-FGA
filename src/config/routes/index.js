@@ -4,7 +4,7 @@ import {
   Switch,
   Route,
 } from "react-router-dom";
-import { Hompage } from '../../pages';
+import { Hompage, RenderComponent } from '../../pages';
 
 const Routes = () => {
   return (
@@ -12,7 +12,8 @@ const Routes = () => {
       <Router>
         <Switch>
           <Route exact path="/" component={Hompage} />
-          </Switch>
+          <Route exact path="/component" component={RenderComponent} />
+        </Switch>
       </Router>
     </div>
   )
